@@ -27,13 +27,12 @@ namespace Pratica
             byte[] buffer = new byte[client.ReceiveBufferSize];
 
             //Lê o que foi recebido
-            int bufferSize = nwStream.Read(buffer, 0, client.ReceiveBufferSize);
+            int bytesRead = nwStream.Read(buffer, 0, client.ReceiveBufferSize);
             
             //Converte os 12 primeiros Bytes para hexa
             string head = BitConverter.ToString(buffer.Take(12).ToArray()).Replace("-",":");
 
             //Converte de 12-14 Bytes para int
-            string head = BitConverter.ToString(buffer.Take(12).ToArray()).Replace("-",":");
 
             //converter para texto
 
@@ -41,7 +40,7 @@ namespace Pratica
 
             //---write back the text to the client---
             Console.WriteLine("Sending back : " + head);
-            nwStream.Write(buffer, 0, headByte);
+            nwStream.Write(buffer, 0, bytesRead);
             client.Close();
             listener.Stop();
             Console.ReadLine();
