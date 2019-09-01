@@ -1,27 +1,33 @@
 ﻿using System;
 
-namespace Pratica
-{
-    class Program
-    {
-        const int PORT_NO = 5000;
-        const string SERVER_IP = "127.0.0.1";
-
-        static void Main(string[] args)
-        {
-            while(true){
-                Console.WriteLine("1- Para receber \n2 - para enviar");
-                var opcao = int.Parse(Console.ReadLine());
-                if (opcao == 1){
-                    var server = new Server();
-                    server.Receber();
-                    break;
-                } else if (opcao == 2){
-                    var client = new Client();
-                    client.Enviar();
-                    break;
-                }
-            }
+namespace Pratica{
+  class Program{
+    static void Main(string[] args){
+      bool outLoop = false;
+      while(!outLoop){
+        Console.WriteLine("Escolha uma opção: \n\n1) Servidor \n2) Cliente");
+        Console.Write("Opção: ");
+        int option;
+        if(int.TryParse(Console.ReadLine(), out option)){
+            switch(option){
+            case 1:
+              var server = new Server();
+              server.receive();
+              outLoop = true;
+              break;
+            case 2:
+              var client = new Client();
+              client.send();
+              outLoop = true;
+              break;
+            default:
+              Console.WriteLine("Opção inválida! Gentileza escolher novamente.\n");
+              break;
+          }
+        } else {
+          Console.WriteLine("Opção inválida! Gentileza escolher novamente.\n");
         }
+      }
     }
+  }
 }
