@@ -12,11 +12,13 @@ namespace Pratica{
             switch(option){
             case 1:
               var server = new Server();
+              Log.WriteLog(Log.SERVER_CREATE);
               server.receive();
               outLoop = true;
               break;
             case 2:
               var client = new Client();
+              Log.WriteLog(Log.CLIENT_CREATE);
               client.send();
               outLoop = true;
               break;

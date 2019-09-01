@@ -3,6 +3,8 @@ using System.Linq;
 using System.Net.Sockets;
 using System.Text;
 using System.Threading;
+using System.IO;
+using System.Reflection;
 
 namespace Pratica{
   class Client{
@@ -10,35 +12,44 @@ namespace Pratica{
     const int COLISION_PERCENTAGE = 10;
     const string SERVER_IP = "127.0.1.1";
     const string FILE_PATH = "teste.txt";
+    const string FILE_PATH_PDU_BITS = "pduBits.txt";
     string macOrigem = "41:7f:33:0e:65:b2";
     string macDestino = "41:7f:83:e8:5e:ff";
     public void send(){
       Random random = new Random(); 
       //Tentar fazer a conexão
       TcpClient tcpClient = new TcpClient();
-      tcpClient.SendBufferSize = 1024;
       bool outLoop = false;
       while (!outLoop){
         try {
           //verifica colisao
           var colision = random.Next(0, 100);
           if(COLISION_PERCENTAGE <= colision){
+            Log.WriteLog(Log.CLIENT_WITHOUT_COLISION);
             string content = System.IO.File.ReadAllText(FILE_PATH);
             //Converte Head para byte.
             byte[] macOrigemByte = macOrigem.Split(':').Select(x => Convert.ToByte(x, 16)).ToArray();
+            Log.WriteLog(Log.CLIENT_CONVERT_MAC_SOURCE);
             byte[] macDestinoByte = macDestino.Split(':').Select(x => Convert.ToByte(x, 16)).ToArray();
+            Log.WriteLog(Log.CLIENT_CONVERT_MAC_DESTINY);
             byte[] payloadSizeByte = BitConverter.GetBytes(Convert.ToInt16(content.Length));
-            //Concatena o Head.
-            byte[] bytesToSend = Concat(Concat(macOrigemByte,macDestinoByte),payloadSizeByte);
-            //Tenta estabelecer conexão.
-            tcpClient.Connect(SERVER_IP, PORT_NO);
-            NetworkStream nwStream = tcpClient.GetStream();
-            Console.WriteLine("\n\nConexão estabelecida:");
+            Log.WriteLog(Log.CLIENT_CONVERT_PAYLOAD_SIZE);
             //Converte Payload para byte.
             byte[] payloadByte = ASCIIEncoding.ASCII.GetBytes(content);
+            Log.WriteLog(Log.CLIENT_CONVERT_PAYLOAD);
+            //Concatena o Head.
+            byte[] bytesToSend = Concat(Concat(macOrigemByte,macDestinoByte),payloadSizeByte);
             //Concate o Head com o Payload
             bytesToSend = Concat(bytesToSend,payloadByte);
+            //Tenta estabelecer conexão.
+            tcpClient.Connect(SERVER_IP, PORT_NO);
+            Log.WriteLog(Log.CLIENT_CONNECT);
+            NetworkStream nwStream = tcpClient.GetStream();
+            Console.WriteLine("\n\nConexão estabelecida:");
             var pduBits = string.Concat(bytesToSend.Select(b => Convert.ToString(b, 2).PadLeft(8, '0')));
+            if(!File.Exists(FILE_PATH_PDU_BITS))
+              File.Create(FILE_PATH_PDU_BITS).Close();
+            System.IO.File.WriteAllText(FILE_PATH_PDU_BITS, pduBits);
             //Exibe PDU
             Console.WriteLine("\tMAC Origem: {0}", macOrigem);
             Console.WriteLine("\tMAC Destino: {0}", macDestino);
@@ -50,13 +61,16 @@ namespace Pratica{
             //Encerra a conexao
             tcpClient.Close();
             Console.WriteLine("\nConexão encerrada.");
+            Log.WriteLog(Log.CLIENT_CLOSE);
             outLoop = true;
           } else {
+            Log.WriteLog(Log.CLIENT_WITH_COLISION);
             var sleepTime = random.Next(0, 100);
             Thread.Sleep(sleepTime);
             Console.WriteLine("Colisão detectada! Será enviado novamente em {0} ms.", sleepTime);
           }
         } catch(SocketException) {
+          Log.WriteLog(Log.CLIENT_CONNECT_PROBLEM);
           var sleepTime = random.Next(0, 100);
           Thread.Sleep(sleepTime);
           Console.WriteLine("Erro, tempo de espera é de : " + sleepTime + "ms");

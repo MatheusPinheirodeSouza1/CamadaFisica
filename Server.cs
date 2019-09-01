@@ -11,15 +11,17 @@ namespace Pratica{
     public void receive(){
       IPHostEntry ipHostInfo = Dns.GetHostEntry(Dns.GetHostName());  
       IPAddress ipAddress = ipHostInfo.AddressList[0];
+      Log.WriteLog(Log.SERVER_START);
       Console.WriteLine("Servidor ativo:");
       Console.WriteLine("\tIP: {0}\n\tPorta: {1}", ipAddress, PORT_NO);
       while(true){
         //Escuta a porta
         TcpListener listener = new TcpListener(ipAddress, PORT_NO);
         listener.Start();
+        Log.WriteLog("Servidor de IP: " + ipAddress + " ouvindo a porta: " + PORT_NO);
         //Aceita conexão do cliente
         TcpClient client = listener.AcceptTcpClient();
-        client.ReceiveBufferSize = 1024;
+        Log.WriteLog("Servidor aceita conexão com cliente: " + ((IPEndPoint)client.Client.RemoteEndPoint).Address.ToString());
         Console.WriteLine("Conexão aceita: \n\tIP: {0}", ((IPEndPoint)client.Client.RemoteEndPoint).Address.ToString());
         //Recebe os dados do cliente via stream
         NetworkStream nwStream = client.GetStream();
@@ -29,12 +31,16 @@ namespace Pratica{
         byte[] bytesReceive = buffer.Take(bytesRead).ToArray();
         //mac origem: 0-5 para hexa
         string macOrigem = BitConverter.ToString(bytesReceive.Take(6).ToArray()).Replace("-",":");
+        Log.WriteLog(Log.SERVER_CONVERT_MAC_SOURCE + " (" + macOrigem + ")");
         //mac destino: 6-11 para hexa
         string macDestino = BitConverter.ToString(bytesReceive.Skip(6).Take(6).ToArray()).Replace("-",":");
+        Log.WriteLog(Log.SERVER_CONVERT_MAC_DESTINY + " (" + macDestino + ")");
         //Converte de 12-13 Bytes para int
         int payloadSize = BitConverter.ToInt16(bytesReceive.Skip(12).Take(2).ToArray());
+        Log.WriteLog(Log.SERVER_CONVERT_PAYLOAD_SIZE + " (" + payloadSize + ")");
         //Converte 14-sizeReceive para string
         string payload = ASCIIEncoding.ASCII.GetString((bytesReceive.Skip(14).Take(bytesRead-14).ToArray()));
+        Log.WriteLog(Log.SERVER_CONVERT_PAYLOAD + " (" + payload + ")");
         //Exibe PDU
         Console.WriteLine("\tMAC Origem: " + macOrigem);
         Console.WriteLine("\tMAC Destino: " + macDestino);
@@ -43,6 +49,7 @@ namespace Pratica{
         //Encerra conexao
         client.Close();
         listener.Stop();
+        Log.WriteLog(Log.SERVER_CLOSE_CLIENT);
       }
     }
   }
