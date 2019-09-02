@@ -20,3 +20,14 @@ c:/Users/mathe/Desktop/Pratica/obj/Debug/netcoreapp2.2/Pratica.pdb
 /home/gustavo/Software/CamadaFisica/obj/Debug/netcoreapp2.2/Pratica.AssemblyInfo.cs
 /home/gustavo/Software/CamadaFisica/obj/Debug/netcoreapp2.2/Pratica.dll
 /home/gustavo/Software/CamadaFisica/obj/Debug/netcoreapp2.2/Pratica.pdb
+C:\Users\mathe\Desktop\CamadaFisica\bin\Debug\netcoreapp2.2\Pratica.deps.json
+C:\Users\mathe\Desktop\CamadaFisica\bin\Debug\netcoreapp2.2\Pratica.runtimeconfig.json
+C:\Users\mathe\Desktop\CamadaFisica\bin\Debug\netcoreapp2.2\Pratica.runtimeconfig.dev.json
+C:\Users\mathe\Desktop\CamadaFisica\bin\Debug\netcoreapp2.2\Pratica.dll
+C:\Users\mathe\Desktop\CamadaFisica\bin\Debug\netcoreapp2.2\Pratica.pdb
+C:\Users\mathe\Desktop\CamadaFisica\obj\Debug\netcoreapp2.2\Pratica.csprojAssemblyReference.cache
+C:\Users\mathe\Desktop\CamadaFisica\obj\Debug\netcoreapp2.2\Pratica.csproj.CoreCompileInputs.cache
+C:\Users\mathe\Desktop\CamadaFisica\obj\Debug\netcoreapp2.2\Pratica.AssemblyInfoInputs.cache
+C:\Users\mathe\Desktop\CamadaFisica\obj\Debug\netcoreapp2.2\Pratica.AssemblyInfo.cs
+C:\Users\mathe\Desktop\CamadaFisica\obj\Debug\netcoreapp2.2\Pratica.dll
+C:\Users\mathe\Desktop\CamadaFisica\obj\Debug\netcoreapp2.2\Pratica.pdb

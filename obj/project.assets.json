@@ -686,23 +686,23 @@
     ]
   },
   "packageFolders": {
-    "/home/gustavo/.nuget/packages/": {},
-    "/usr/share/dotnet/sdk/NuGetFallbackFolder": {}
+    "C:\\Users\\mathe\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/gustavo/Software/CamadaFisica/Pratica.csproj",
+      "projectUniqueName": "C:\\Users\\mathe\\Desktop\\CamadaFisica\\Pratica.csproj",
       "projectName": "Pratica",
-      "projectPath": "/home/gustavo/Software/CamadaFisica/Pratica.csproj",
-      "packagesPath": "/home/gustavo/.nuget/packages/",
-      "outputPath": "/home/gustavo/Software/CamadaFisica/obj/",
+      "projectPath": "C:\\Users\\mathe\\Desktop\\CamadaFisica\\Pratica.csproj",
+      "packagesPath": "C:\\Users\\mathe\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\mathe\\Desktop\\CamadaFisica\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "/usr/share/dotnet/sdk/NuGetFallbackFolder"
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/home/gustavo/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\mathe\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.2"

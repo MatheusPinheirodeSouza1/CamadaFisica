@@ -1,0 +1,131 @@
+
+01/09/2019 21:04:16 - Cliente criado.
+01/09/2019 21:04:16 - Cliente não detecta colisão.
+01/09/2019 21:06:04 - Cliente criado.
+01/09/2019 21:06:05 - Cliente não detecta colisão.
+01/09/2019 21:06:35 - Cliente criado.
+01/09/2019 21:06:35 - Cliente não detecta colisão.
+01/09/2019 21:06:35 - Cliente converte MAC de origem.
+01/09/2019 21:06:35 - Cliente converte MAC de destino.
+01/09/2019 21:06:35 - Cliente converte tamanho do payload.
+01/09/2019 21:06:35 - Cliente converte payload.
+01/09/2019 21:06:36 - Cliente não conseguiu se conectar.
+01/09/2019 21:06:36 - Cliente não detecta colisão.
+01/09/2019 21:06:36 - Cliente converte MAC de origem.
+01/09/2019 21:06:36 - Cliente converte MAC de destino.
+01/09/2019 21:06:36 - Cliente converte tamanho do payload.
+01/09/2019 21:06:36 - Cliente converte payload.
+01/09/2019 21:06:37 - Cliente não conseguiu se conectar.
+01/09/2019 21:06:37 - Cliente não detecta colisão.
+01/09/2019 21:06:37 - Cliente converte MAC de origem.
+01/09/2019 21:06:37 - Cliente converte MAC de destino.
+01/09/2019 21:06:37 - Cliente converte tamanho do payload.
+01/09/2019 21:06:37 - Cliente converte payload.
+01/09/2019 21:06:38 - Cliente não conseguiu se conectar.
+01/09/2019 21:06:38 - Cliente detecta colisão.
+01/09/2019 21:06:38 - Cliente não detecta colisão.
+01/09/2019 21:06:38 - Cliente converte MAC de origem.
+01/09/2019 21:06:38 - Cliente converte MAC de destino.
+01/09/2019 21:06:38 - Cliente converte tamanho do payload.
+01/09/2019 21:06:38 - Cliente converte payload.
+01/09/2019 21:06:39 - Cliente não conseguiu se conectar.
+01/09/2019 21:06:39 - Cliente não detecta colisão.
+01/09/2019 21:06:39 - Cliente converte MAC de origem.
+01/09/2019 21:06:39 - Cliente converte MAC de destino.
+01/09/2019 21:06:39 - Cliente converte tamanho do payload.
+01/09/2019 21:06:39 - Cliente converte payload.
+01/09/2019 21:06:40 - Cliente não conseguiu se conectar.
+01/09/2019 21:06:41 - Cliente não detecta colisão.
+01/09/2019 21:06:41 - Cliente converte MAC de origem.
+01/09/2019 21:06:41 - Cliente converte MAC de destino.
+01/09/2019 21:06:41 - Cliente converte tamanho do payload.
+01/09/2019 21:06:41 - Cliente converte payload.
+01/09/2019 21:06:42 - Cliente não conseguiu se conectar.
+01/09/2019 21:06:42 - Cliente detecta colisão.
+01/09/2019 21:06:42 - Cliente não detecta colisão.
+01/09/2019 21:06:42 - Cliente converte MAC de origem.
+01/09/2019 21:06:42 - Cliente converte MAC de destino.
+01/09/2019 21:06:42 - Cliente converte tamanho do payload.
+01/09/2019 21:06:42 - Cliente converte payload.
+01/09/2019 21:06:43 - Cliente não conseguiu se conectar.
+01/09/2019 21:06:43 - Cliente não detecta colisão.
+01/09/2019 21:06:43 - Cliente converte MAC de origem.
+01/09/2019 21:06:43 - Cliente converte MAC de destino.
+01/09/2019 21:06:43 - Cliente converte tamanho do payload.
+01/09/2019 21:06:43 - Cliente converte payload.
+01/09/2019 21:06:44 - Cliente não conseguiu se conectar.
+01/09/2019 21:06:44 - Cliente não detecta colisão.
+01/09/2019 21:06:44 - Cliente converte MAC de origem.
+01/09/2019 21:06:44 - Cliente converte MAC de destino.
+01/09/2019 21:06:44 - Cliente converte tamanho do payload.
+01/09/2019 21:06:44 - Cliente converte payload.
+01/09/2019 21:06:45 - Cliente não conseguiu se conectar.
+01/09/2019 21:06:45 - Cliente não detecta colisão.
+01/09/2019 21:06:45 - Cliente converte MAC de origem.
+01/09/2019 21:06:45 - Cliente converte MAC de destino.
+01/09/2019 21:06:45 - Cliente converte tamanho do payload.
+01/09/2019 21:06:45 - Cliente converte payload.
+01/09/2019 21:06:46 - Cliente não conseguiu se conectar.
+01/09/2019 21:06:46 - Cliente não detecta colisão.
+01/09/2019 21:06:46 - Cliente converte MAC de origem.
+01/09/2019 21:06:46 - Cliente converte MAC de destino.
+01/09/2019 21:06:46 - Cliente converte tamanho do payload.
+01/09/2019 21:06:46 - Cliente converte payload.
+01/09/2019 21:07:39 - Servidor criado.
+01/09/2019 21:07:39 - Servidor iniciado.
+01/09/2019 21:07:39 - Servidor de IP: fe80::c04e:3ed1:a620:a5a9%6 ouvindo a porta: 5000
+01/09/2019 21:07:49 - Cliente criado.
+01/09/2019 21:07:49 - Cliente detecta colisão.
+01/09/2019 21:07:49 - Cliente não detecta colisão.
+01/09/2019 21:07:49 - Cliente converte MAC de origem.
+01/09/2019 21:07:49 - Cliente converte MAC de destino.
+01/09/2019 21:07:49 - Cliente converte tamanho do payload.
+01/09/2019 21:07:49 - Cliente converte payload.
+01/09/2019 21:07:50 - Cliente não conseguiu se conectar.
+01/09/2019 21:07:50 - Cliente não detecta colisão.
+01/09/2019 21:07:50 - Cliente converte MAC de origem.
+01/09/2019 21:07:50 - Cliente converte MAC de destino.
+01/09/2019 21:07:50 - Cliente converte tamanho do payload.
+01/09/2019 21:07:50 - Cliente converte payload.
+01/09/2019 21:07:51 - Cliente não conseguiu se conectar.
+01/09/2019 21:07:51 - Cliente não detecta colisão.
+01/09/2019 21:07:51 - Cliente converte MAC de origem.
+01/09/2019 21:07:51 - Cliente converte MAC de destino.
+01/09/2019 21:07:51 - Cliente converte tamanho do payload.
+01/09/2019 21:07:51 - Cliente converte payload.
+01/09/2019 21:07:52 - Cliente não conseguiu se conectar.
+01/09/2019 21:07:52 - Cliente não detecta colisão.
+01/09/2019 21:07:52 - Cliente converte MAC de origem.
+01/09/2019 21:07:52 - Cliente converte MAC de destino.
+01/09/2019 21:07:52 - Cliente converte tamanho do payload.
+01/09/2019 21:07:52 - Cliente converte payload.
+01/09/2019 21:07:53 - Cliente não conseguiu se conectar.
+01/09/2019 21:07:53 - Cliente não detecta colisão.
+01/09/2019 21:07:53 - Cliente converte MAC de origem.
+01/09/2019 21:07:53 - Cliente converte MAC de destino.
+01/09/2019 21:07:53 - Cliente converte tamanho do payload.
+01/09/2019 21:07:53 - Cliente converte payload.
+01/09/2019 21:08:33 - Cliente criado.
+01/09/2019 21:08:33 - Cliente não detecta colisão.
+01/09/2019 21:08:33 - Cliente converte MAC de origem.
+01/09/2019 21:08:33 - Cliente converte MAC de destino.
+01/09/2019 21:08:33 - Cliente converte tamanho do payload.
+01/09/2019 21:08:33 - Cliente converte payload.
+01/09/2019 21:08:34 - Cliente não conseguiu se conectar.
+01/09/2019 21:08:34 - Cliente não detecta colisão.
+01/09/2019 21:08:34 - Cliente converte MAC de origem.
+01/09/2019 21:08:34 - Cliente converte MAC de destino.
+01/09/2019 21:08:34 - Cliente converte tamanho do payload.
+01/09/2019 21:08:34 - Cliente converte payload.
+01/09/2019 21:08:35 - Cliente não conseguiu se conectar.
+01/09/2019 21:08:35 - Cliente detecta colisão.
+01/09/2019 21:08:35 - Cliente não detecta colisão.
+01/09/2019 21:08:35 - Cliente converte MAC de origem.
+01/09/2019 21:08:35 - Cliente converte MAC de destino.
+01/09/2019 21:08:35 - Cliente converte tamanho do payload.
+01/09/2019 21:08:35 - Cliente converte payload.
+01/09/2019 21:09:02 - Servidor criado.
+01/09/2019 21:09:02 - Servidor iniciado.
+01/09/2019 21:09:02 - Servidor de IP: fe80::c04e:3ed1:a620:a5a9%6 ouvindo a porta: 5000
+01/09/2019 21:09:08 - Cliente criado.
+01/09/2019 21:09:08 - Cliente não detecta colisão.
