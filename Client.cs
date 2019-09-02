@@ -19,9 +19,9 @@ namespace Pratica{
       Random random = new Random(); 
 
       //Pega Mac do destino e origem.
-      macOrigem = GetMacAddress("127.0.1.1");
-      macDestino = GetMacAddress("127.0.1.1");
-      Console.WriteLine("\n\nConexão estabelecida:" + macDestino);
+      macOrigem = GetMacAddress("192.168.25.95");
+      macDestino = GetMacAddress("192.168.25.95");
+      
       //Tentar fazer a conexão
       TcpClient tcpClient = new TcpClient();
       bool outLoop = false;
